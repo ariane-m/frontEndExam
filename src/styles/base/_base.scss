@@ -119,9 +119,6 @@ p {
   .col-6 .razer-nari {
     display: none;
   }
-  .home .top-page {
-    background-position: center;
-  }
 }
 
 @include media-breakpoint-up(md) {
@@ -133,5 +130,15 @@ p {
 @include media-breakpoint-up(lg) {
   p {
     font-size: 16px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .third-page .container .row .col-sm-1 img{
+    display: none;
+    background-position: center;
+    padding-bottom: 0;
+  }
+  .home .third-page {
+    height: 10vh;
   }
 }
