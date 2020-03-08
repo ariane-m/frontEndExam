@@ -3,16 +3,24 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
-
-.buy-now {
+%button {
     font-size: x-small;
     font-weight: bold;
     background-color: $brand-color; 
+}
+
+.buy-now {
+    @extend %button;
     padding: 10px;
     width: 15%;
 }
-.prod-button {
-    background-color: $brand-color;
+.products-button {
+    @extend %button;
     position: absolute;
-    z-index: 999;
+    padding: 10px;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
 }
