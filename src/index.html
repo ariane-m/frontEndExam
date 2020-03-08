@@ -85,11 +85,26 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a href="#" class="nav-link mr-2"
-                  >PRODUCTS&nbsp;<i class="fas fa-chevron-down"></i>
-                  <span class="sr-only">(current)</span>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  PRODUCTS&nbsp;<i class="fas fa-chevron-down"></i>
                 </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item text-uppercase" href="#">laptops</a>
+                  <a class="dropdown-item text-uppercase" href="#">mobiles</a> 
+                  <a class="dropdown-item text-uppercase" href="#">mouses and mats</a>
+                  <a class="dropdown-item text-uppercase" href="#">keyboards</a>
+                  <div class="dropdown-submenu">
+                    <button type="button" class="btn btn-secondary" data-toggle="dropdown">
+                      HEADSET AND AUDIO&nbsp;<i class="fas fa-chevron-right"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item text-uppercase" href="#">wireless</a>
+                      <a class="dropdown-item text-uppercase" href="#">wired</a>
+                    </div>
+                  </div>
+                  <a class="dropdown-item text-uppercase" href="#">console</a>
+                </div>
               </li>
               <li class="nav-item mr-2">
                 <a href="#" class="nav-link">ABOUT</a>
