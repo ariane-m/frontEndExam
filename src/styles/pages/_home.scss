@@ -6,7 +6,7 @@
 
 .home {
   transition: all .2s ease-in-out;
-  
+  overflow: hidden;
   .section-intro {
     padding: 40px 0;
 
@@ -66,7 +66,7 @@
     padding-bottom: 3%;
     .information {
       font-size: smaller;
-      line-height: 2px;
+      line-height: 5px;
     }
     input, textarea {
       font-weight: bolder;
@@ -97,6 +97,10 @@
   }
   img:hover {
     opacity: 0.1;
+  }
+  .swiper-slide:hover .products-button {
+    transition: ease .4s;
+    opacity: 1;
   }
 }
 

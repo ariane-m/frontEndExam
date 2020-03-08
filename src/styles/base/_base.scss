@@ -51,6 +51,13 @@ input[type="text"] {
   background-color: $light-grey;
   font-size: small;
   height: 85px;
+  .dropdown-menu {
+    width: 30%;
+  }
+  .collapse .navbar-collapse {
+    background-color: $light-grey;
+  }
+  
 }
 
 //styles for navbar-toggler
@@ -94,5 +101,37 @@ input[type="text"] {
 
   @include on-event() {
     outline: 0;
+  }
+}
+
+p {
+  font-size: 14px;
+}
+
+@include media-breakpoint-up(sm) {
+  .container {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  p {
+    font-size: 12px;
+  }
+  .col-6 .razer-nari {
+    display: none;
+  }
+  .home .top-page {
+    background-position: center;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  p {
+    font-size: 14px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  p {
+    font-size: 16px;
   }
 }

@@ -15,6 +15,7 @@
 
     <link rel="icon" href="./assets/images/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="./styles/main.min.css" />
+    <link rel="stylesheet" href="../package/css/swiper.min.css" />
     <!--[if lte IE 9]>
       <link href="stylesheets/non-responsive.css" rel="stylesheet" />
     <![endif]-->
@@ -71,7 +72,7 @@
             ><img src="./assets/images/logo-2.png" alt="razer-logo"
           /></a>
           <button
-            class="navbar-toggler navbar-toggler-right"
+            class="navbar-toggler"
             type="button"
             data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -86,20 +87,38 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item dropdown">
-                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="true"
+                >
                   PRODUCTS&nbsp;<i class="fas fa-chevron-down"></i>
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item text-uppercase" href="#">laptops</a>
-                  <a class="dropdown-item text-uppercase" href="#">mobiles</a> 
-                  <a class="dropdown-item text-uppercase" href="#">mouses and mats</a>
+                  <a class="dropdown-item text-uppercase" href="#">mobiles</a>
+                  <a class="dropdown-item text-uppercase" href="#"
+                    >mouses and mats</a
+                  >
                   <a class="dropdown-item text-uppercase" href="#">keyboards</a>
                   <div class="dropdown-submenu">
-                    <button type="button" class="btn btn-secondary" data-toggle="dropdown">
-                      HEADSET AND AUDIO&nbsp;<i class="fas fa-chevron-right"></i>
-                    </button>
+                    <a
+                      href="#"
+                      data-toggle="dropdown"
+                      role="button"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      HEADSET AND AUDIO&nbsp;<i class="fas fa-chevron-right"></i
+                    ></a>
                     <div class="dropdown-menu">
-                      <a class="dropdown-item text-uppercase" href="#">wireless</a>
+                      <a class="dropdown-item text-uppercase" href="#"
+                        >wireless</a
+                      >
                       <a class="dropdown-item text-uppercase" href="#">wired</a>
                     </div>
                   </div>
@@ -128,7 +147,7 @@
       <div class="top-page">
         <div class="container">
           <div class="row">
-            <div class="col-6">
+            <div class="col-md-6 col-sm-1">
               <h1>SUPREME WIRELESS IMMERSION</h1>
               <p>
                 When it comes to gaming immersion, sound plays a critical role,
@@ -147,7 +166,7 @@
               <img class="mr-4" src="./assets/images/2.png" alt="THX" />
               <img src="./assets/images/3.png" alt="" />
             </div>
-            <div class="col-6 mt-0">
+            <div class="col-6 mt-0 razer-nari">
               <img
                 class="float-right"
                 style="margin-top: -80px;margin-right: -80px;"
@@ -169,7 +188,7 @@
             worlds for hours without strain.
           </p>
           <div class="row">
-            <div class="col-4">
+            <div class="col-sm">
               <img
                 src="./assets/images/razer-nari-Cooling-Gel-Infused-Cushions-icon.svg"
                 alt="cooling-gel"
@@ -191,7 +210,7 @@
                 communication.
               </p>
             </div>
-            <div class="col-4">
+            <div class="col-sm">
               <img
                 src="./assets/images/razer-nari-Auto-Adjusting-Headband-icon.svg"
                 alt="cooling-gel"
@@ -212,7 +231,7 @@
                 of up to 12 meters smoothly without disconnection.
               </p>
             </div>
-            <div class="col-4">
+            <div class="col-sm">
               <img
                 src="./assets/images/razer-nari-Swiveling-Earcups-icon.svg"
                 alt="cooling-gel"
@@ -238,212 +257,84 @@
           <hr style="background-color: #5a5a5a;" />
           <h2 style="margin-top: 5%;">PRODUCT IMAGES</h2>
 
+          <!-- Swiper -->
           <div class="swiper-container">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="row">
-                  <div class="col-3">
-                    <img
-                      class="card-img-top"
-                      src="./assets/images/razer-nari-gallery-05-wireless-gaming-headset XS.jpg"
-                      alt="Card image cap"
-                    />
-                    <button
-                      class="btn badge-pill products-button"
-                      data-toggle="modal"
-                      data-target="#wireless"
-                      type="submit"
-                    >
-                      VIEW FULL SCREEN
-                    </button>
-                  </div>
-                  <div class="col-3">
-                    <img
-                      class="card-img-top"
-                      src="./assets/images/razer-nari-gallery-06-wireless-gaming-headset xs.jpg"
-                      alt="Card image cap"
-                    />
-                    <button
-                      class="btn badge-pill products-button"
-                      data-toggle="modal"
-                      data-target="#wireless2"
-                      type="submit"
-                    >
-                      VIEW FULL SCREEN
-                    </button>
-                  </div>
-                  <div class="col-3">
-                    <img
-                      class="card-img-top"
-                      src="./assets/images/razer-nari-gallery-07-wireless-gaming-headset xs.jpg"
-                      alt="Card image cap"
-                    />
-                    <button
-                      class="btn badge-pill products-button"
-                      data-toggle="modal"
-                      data-target="#wireless3"
-                      type="submit"
-                    >
-                      VIEW FULL SCREEN
-                    </button>
-                  </div>
-                  <div class="col-3">
-                    <img
-                      class="card-img-top"
-                      src="./assets/images/razer-nari-gallery-08-wireless-gaming-headset xs.jpg"
-                      alt="Card image cap"
-                    />
-                    <button
-                      class="btn badge-pill products-button"
-                      data-toggle="modal"
-                      data-target="#wireless4"
-                      type="submit"
-                    >
-                      VIEW FULL SCREEN
-                    </button>
-                  </div>
-                </div>
+                <img
+                  class="card-img-top"
+                  src="./assets/images/razer-nari-gallery-08-wireless-gaming-headset xs.jpg"
+                  alt="Card image cap"
+                />
+                <button
+                  class="btn badge-pill products-button"
+                  data-toggle="modal"
+                  data-target="#wireless4"
+                  type="submit"
+                >
+                  VIEW FULL SCREEN
+                </button>
               </div>
               <div class="swiper-slide">
-                <div class="row">
-                  <div class="col-3">
-                    <img
-                      class="card-img-top"
-                      src="./assets/images/razer-nari-gallery-05-wireless-gaming-headset XS.jpg"
-                      alt="Card image cap"
-                    />
-                    <button
-                      class="btn badge-pill products-button"
-                      data-toggle="modal"
-                      data-target="#wireless"
-                      type="submit"
-                    >
-                      VIEW FULL SCREEN
-                    </button>
-                  </div>
-                  <div class="col-3">
-                    <img
-                      class="card-img-top"
-                      src="./assets/images/razer-nari-gallery-06-wireless-gaming-headset xs.jpg"
-                      alt="Card image cap"
-                    />
-                    <button
-                      class="btn badge-pill products-button"
-                      data-toggle="modal"
-                      data-target="#wireless2"
-                      type="submit"
-                    >
-                      VIEW FULL SCREEN
-                    </button>
-                  </div>
-                  <div class="col-3">
-                    <img
-                      class="card-img-top"
-                      src="./assets/images/razer-nari-gallery-07-wireless-gaming-headset xs.jpg"
-                      alt="Card image cap"
-                    />
-                    <button
-                      class="btn badge-pill products-button"
-                      data-toggle="modal"
-                      data-target="#wireless3"
-                      type="submit"
-                    >
-                      VIEW FULL SCREEN
-                    </button>
-                  </div>
-                  <div class="col-3">
-                    <img
-                      class="card-img-top"
-                      src="./assets/images/razer-nari-gallery-08-wireless-gaming-headset xs.jpg"
-                      alt="Card image cap"
-                    />
-                    <button
-                      class="btn badge-pill products-button"
-                      data-toggle="modal"
-                      data-target="#wireless4"
-                      type="submit"
-                    >
-                      VIEW FULL SCREEN
-                    </button>
-                  </div>
-                </div>
+                <img
+                  class="card-img-top"
+                  src="./assets/images/razer-nari-gallery-07-wireless-gaming-headset xs.jpg"
+                  alt="Card image cap"
+                />
+                <button
+                  class="btn badge-pill products-button"
+                  data-toggle="modal"
+                  data-target="#wireless4"
+                  type="submit"
+                >
+                  VIEW FULL SCREEN
+                </button>
               </div>
               <div class="swiper-slide">
-                <div class="row">
-                  <div class="col-3">
-                    <img
-                      class="card-img-top"
-                      src="./assets/images/razer-nari-gallery-05-wireless-gaming-headset XS.jpg"
-                      alt="Card image cap"
-                    />
-                    <button
-                      class="btn badge-pill products-button"
-                      data-toggle="modal"
-                      data-target="#wireless"
-                      type="submit"
-                    >
-                      VIEW FULL SCREEN
-                    </button>
-                  </div>
-                  <div class="col-3">
-                    <img
-                      class="card-img-top"
-                      src="./assets/images/razer-nari-gallery-06-wireless-gaming-headset xs.jpg"
-                      alt="Card image cap"
-                    />
-                    <button
-                      class="btn badge-pill products-button"
-                      data-toggle="modal"
-                      data-target="#wireless2"
-                      type="submit"
-                    >
-                      VIEW FULL SCREEN
-                    </button>
-                  </div>
-                  <div class="col-3">
-                    <img
-                      class="card-img-top"
-                      src="./assets/images/razer-nari-gallery-07-wireless-gaming-headset xs.jpg"
-                      alt="Card image cap"
-                    />
-                    <button
-                      class="btn badge-pill products-button"
-                      data-toggle="modal"
-                      data-target="#wireless3"
-                      type="submit"
-                    >
-                      VIEW FULL SCREEN
-                    </button>
-                  </div>
-                  <div class="col-3">
-                    <img
-                      class="card-img-top"
-                      src="./assets/images/razer-nari-gallery-08-wireless-gaming-headset xs.jpg"
-                      alt="Card image cap"
-                    />
-                    <button
-                      class="btn badge-pill products-button"
-                      data-toggle="modal"
-                      data-target="#wireless4"
-                      type="submit"
-                    >
-                      VIEW FULL SCREEN
-                    </button>
-                  </div>
-                </div>
+                <img
+                  class="card-img-top"
+                  src="./assets/images/razer-nari-gallery-08-wireless-gaming-headset xs.jpg"
+                  alt="Card image cap"
+                />
+                <button
+                  class="btn badge-pill products-button"
+                  data-toggle="modal"
+                  data-target="#wireless4"
+                  type="submit"
+                >
+                  VIEW FULL SCREEN
+                </button>
               </div>
+              <div class="swiper-slide">
+                <img
+                  class="card-img-top"
+                  src="./assets/images/razer-nari-gallery-06-wireless-gaming-headset xs.jpg"
+                  alt="Card image cap"
+                />
+                <button
+                  class="btn badge-pill products-button"
+                  data-toggle="modal"
+                  data-target="#wireless4"
+                  type="submit"
+                >
+                  VIEW FULL SCREEN
+                </button>
+              </div>
+              <div class="swiper-slide">Slide 9</div>
+              <div class="swiper-slide">Slide 10</div>
             </div>
             <!-- Add Pagination -->
             <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>
+
       <div class="third-page">
         <div class="container">
           <div class="row">
-            <div class="col-6">
+            <div class="col-md-4 col-sm-1">
               <h2 class="text-left">THX SPATIAL AUDIO</h2>
-              <p>
+              <p style="font-size: 18px;">
                 THX Special Audio goes beyond traditional surround sound by
                 simulating sound in a 360° sphere around you. With the Nari
                 Ultimate, you can now react to any in-game movement, even if
@@ -461,49 +352,7 @@
         <div class="container">
           <h2>EXPLORE OTHER PRODUCTS</h2>
           <div class="row">
-            <div class="col-3 m-2">
-              <div class="card">
-                <img
-                  class="img-fluid"
-                  src="./assets/images/7.jpg"
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">RAZER NARI ULTIMATE</h5>
-                  <p>Wireless Gaming Headset with Razer HyperSense</p>
-                  <a href="#"><h2 style="font-size: small;">LEARN MORE</h2></a>
-                </div>
-              </div>
-            </div>
-            <div class="col-3 m-2">
-              <div class="card">
-                <img
-                  class="card-img-top"
-                  src="./assets/images/8.jpg"
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">RAZER NARI</h5>
-                  <p>Wired Gaming Headset with Razer HyperSense</p>
-                  <a href="#"><h2 style="font-size: small;">LEARN MORE</h2></a>
-                </div>
-              </div>
-            </div>
-            <div class="col-3 m-2">
-              <div class="card">
-                <img
-                  class="img-fluid"
-                  src="./assets/images/Mamba-Wireless-Base.png"
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">RAZER MAMBA WIRELESS</h5>
-                  <p>Full Razer Chroma™ and Wireless Convenience</p>
-                  <a href="#"><h2 style="font-size: small;">LEARN MORE</h2></a>
-                </div>
-              </div>
-            </div>
-            <div class="col-3 m-2">
+            <div class="col-md-4">
               <div class="card">
                 <img
                   class="img-fluid"
@@ -515,7 +364,63 @@
                 <div class="card-body">
                   <h5 class="card-title">RAZER BLACKWIDOW ELITE</h5>
                   <p>The Complete Mechanical Gaming Keyboard</p>
-                  <a href="#"><h2 style="font-size: small;">LEARN MORE</h2></a>
+                  <a href="#">
+                    <h2 style="font-size: small;">LEARN MORE</h2>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img
+                  class="img-fluid"
+                  src="./assets/images/BlackWidow-Elite-Base.png"
+                  alt="Card image cap"
+                  width="200"
+                  height="200"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">RAZER BLACKWIDOW ELITE</h5>
+                  <p>The Complete Mechanical Gaming Keyboard</p>
+                  <a href="#">
+                    <h2 style="font-size: small;">LEARN MORE</h2>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img
+                  class="img-fluid"
+                  src="./assets/images/BlackWidow-Elite-Base.png"
+                  alt="Card image cap"
+                  width="200"
+                  height="200"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">RAZER BLACKWIDOW ELITE</h5>
+                  <p>The Complete Mechanical Gaming Keyboard</p>
+                  <a href="#">
+                    <h2 style="font-size: small;">LEARN MORE</h2>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img
+                  class="img-fluid"
+                  src="./assets/images/BlackWidow-Elite-Base.png"
+                  alt="Card image cap"
+                  width="200"
+                  height="200"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">RAZER BLACKWIDOW ELITE</h5>
+                  <p>The Complete Mechanical Gaming Keyboard</p>
+                  <a href="#">
+                    <h2 style="font-size: small;">LEARN MORE</h2>
+                  </a>
                 </div>
               </div>
             </div>
@@ -526,16 +431,16 @@
       <div class="contact-page">
         <div class="container">
           <div class="row">
-            <div class="col-5">
+            <div class="col-md-5 col-sm-1">
               <h2 class="text-left">ASK A QUESTION</h2>
             </div>
-            <div class="col-2"></div>
-            <div class="col-5">
+            <div class="col-md-2 col-sm-1"></div>
+            <div class="col-md-5 col-sm-1">
               <h2 class="text-left">INFORMATION</h2>
             </div>
           </div>
           <div class="row">
-            <div class="col-5">
+            <div class="col-md-5 col-sm-1">
               <!-- <h2 class="text-left">ASK A QUESTION</h2> -->
               <div class="row">
                 <div class="col-md-6">
@@ -568,8 +473,8 @@
                 SEND
               </button>
             </div>
-            <div class="col-2"></div>
-            <div class="col-5 information">
+            <div class="col-md-2 col-sm-1"></div>
+            <div class="col-md-5 col-sm-1 information">
               <!-- <h2 class="text-left">INFORMATION</h2><br /> -->
               <h5>ADDRESS</h5>
               <p>123 East 123th St.</p>
@@ -590,12 +495,12 @@
         <nav class="navbar navbar-expand-md">
           <div class="container">
             <div class="row" style="width: 100%;">
-              <div class="col-3">
+              <div class="col-md-3 col-sm-1">
                 <a href="#" class="navbar-brand"
                   ><img src="./assets/images/logo-2.png" alt="razer-logo"
                 /></a>
               </div>
-              <div class="col-6">
+              <div class="col-md-6 col-sm-1">
                 <ul class="navbar-nav" style="font-size: small;">
                   <li class="nav-item active">
                     <a href="#" class="nav-link mr-3"
@@ -614,7 +519,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="col-3">
+              <div class="col-md-3 col-sm-1">
                 <ul class="navbar-nav d-inline-flex">
                   <li class="nav-item mr-2">
                     <a href="#" class="nav-link mr-2"
