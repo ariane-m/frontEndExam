@@ -11,14 +11,14 @@
     src: url("../../assets/fonts/Montseratt/montserrat-light_0.ttf") format("ttf")
     }
 
-@font-face {
-    font-family: "MontserattBold";
-    src: url("../../assets/fonts/Montseratt/Montserrat-ExtraBold.otf");
-    src: url("../../assets/fonts/Montseratt/Montserrat-ExtraBold.otf") format("otf")
-    }
+    @font-face {
+        font-family: "MontserattBold";
+        src: url("../../assets/fonts/Montseratt/MontserratAlternates-ExtraBold.otf");
+        src: url("../../assets/fonts/Montseratt/MontserratAlternates-ExtraBold.otf") format("otf")
+        }
 /// Regular font family
 $font-opensans: 'Montseratt';
-$bold-font: 'MontserattBold';
+$bold-font: 'MontserattBold', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
 
 /// @type List
 $text-font-stack: $font-opensans, 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;

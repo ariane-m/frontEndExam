@@ -41,5 +41,7 @@
     "lodash.template": "^4.5.0",
     "pngquant-bin": "3.1.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "aos": "^2.3.4"
+  }
 }

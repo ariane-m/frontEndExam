@@ -28,7 +28,7 @@ AppName.Modules.ThemeModule = (function() {
           slidesPerView: 4,
           spaceBetween: 40,
         },
-      }
+      } 
     });
   };
 
@@ -43,3 +43,13 @@ AppName.Modules.ThemeModule = (function() {
     init: init
   };
 })();
+
+function toggle() {
+  var mainContent = document.getElementById("main-content");
+  if (mainContent.style.display === "none") {
+    mainContent.style.display = "block";
+  } else {
+    mainContent.style.display = "none";
+    document.body.style.backgroundColor = "#0F0F0F";
+  }
+}
