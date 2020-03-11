@@ -5,14 +5,14 @@
 // -----------------------------------------------------------------------------
 
 .home {
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   overflow: hidden;
   .section-intro {
     padding: 40px 0;
 
     text-align: center;
-   }
-   h1 {
+  }
+  h1 {
     color: white;
     font: $text-font-stack;
     font-weight: bolder;
@@ -30,27 +30,28 @@
     font-family: $text-font-stack;
     color: #ffff;
   }
-   .top-page {
-     text-align: left;
-     color: white;
-    background-image: image('../../assets/images/razer-nari-hero-desktop-wireless-gaming-headset CL.jpg');
+  .top-page {
+    text-align: left;
+    color: white;
+    background-image: image(
+      '../../assets/images/razer-nari-hero-desktop-wireless-gaming-headset CL.jpg'
+    );
     background-position: center;
-    height: 67vh;
     margin: 0;
     padding: 0;
     p {
       color: $mid-grey;
     }
   }
-  .second-page{
+  .second-page {
     background-color: $light-grey;
     padding-top: 3%;
     padding-bottom: 3%;
     .flex-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
       .flex-item {
         width: 30%;
       }
@@ -60,9 +61,10 @@
     p {
       color: $mid-grey;
     }
-    background-image: image('../../assets/images/razer-nari-usp02-desktop-wireless-gaming-headset.jpg');
+    background-image: image(
+      '../../assets/images/razer-nari-usp02-desktop-wireless-gaming-headset.jpg'
+    );
     background-position: center;
-    height: 70vh;
     margin: 0;
     padding-top: 5%;
     padding-bottom: 3%;
@@ -80,7 +82,8 @@
       font-size: smaller;
       line-height: 5px;
     }
-    input, textarea {
+    input,
+    textarea {
       font-weight: bolder;
       color: white;
       background-color: transparent;
@@ -90,6 +93,9 @@
   }
   .footer {
     background-color: $light-grey;
+    .container .row .col-md-6 ul li {
+      display: inline;
+    }
   }
 }
 
@@ -109,7 +115,7 @@
     opacity: 0.1;
   }
   .swiper-slide:hover .products-button {
-    transition: ease .4s;
+    transition: ease 0.4s;
     opacity: 1;
   }
 }
@@ -135,7 +141,7 @@
 }
 
 .swiper-pagination-bullet-active:before {
-  content: "";
+  content: '';
   position: absolute;
   top: 2px;
   left: 2px;
