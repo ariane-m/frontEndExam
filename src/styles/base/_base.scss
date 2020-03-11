@@ -32,9 +32,9 @@ a {
 /**
  * Basic styles for input fields
  */
-input[type='email'],
-input[type='password'],
-input[type='text'] {
+input[type="email"],
+input[type="password"],
+input[type="text"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -61,7 +61,7 @@ input[type='text'] {
     }
     .dropdown-menu-right {
       left: 100%;
-      top: 65%;
+      top: 63%;
     }
     .dropdown-item:hover {
       color: $brand-color;
@@ -98,7 +98,7 @@ input[type='text'] {
       }
     }
 
-    &[aria-expanded='true'] {
+    &[aria-expanded="true"] {
       .icon-bar {
         &:first-child {
           @include transform(rotate(225deg) translate(-6px, -5px));
