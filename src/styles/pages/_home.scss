@@ -5,14 +5,14 @@
 // -----------------------------------------------------------------------------
 
 .home {
-  transition: all 0.2s ease-in-out;
+  transition: all .2s ease-in-out;
   overflow: hidden;
   .section-intro {
     padding: 40px 0;
 
     text-align: center;
-  }
-  h1 {
+   }
+   h1 {
     color: white;
     font: $text-font-stack;
     font-weight: bolder;
@@ -30,33 +30,34 @@
     font-family: $text-font-stack;
     color: #ffff;
   }
-  .top-page {
-    text-align: left;
-    color: white;
-    background-image: image(
-      "../../assets/images/razer-nari-hero-desktop-wireless-gaming-headset CL.jpg"
-    );
+   .top-page {
+     text-align: left;
+     color: white;
+    background-image: image('../../assets/images/razer-nari-hero-desktop-wireless-gaming-headset CL.jpg');
     background-position: center;
+    height: 67vh;
     margin: 0;
     padding: 0;
     p {
       color: $mid-grey;
     }
   }
-  .second-page {
+  .second-page{
     background-color: $light-grey;
     padding-top: 3%;
     padding-bottom: 3%;
+    h5 {
+      font-weight: bolder;
+    }
     .flex-container {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-around;
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
       .flex-item {
         width: 30%;
-        img {
-          margin-bottom: 5%;
-        }
       }
     }
   }
@@ -64,10 +65,9 @@
     p {
       color: $mid-grey;
     }
-    background-image: image(
-      "../../assets/images/razer-nari-usp02-desktop-wireless-gaming-headset.jpg"
-    );
+    background-image: image('../../assets/images/razer-nari-usp02-desktop-wireless-gaming-headset.jpg');
     background-position: center;
+    height: 70vh;
     margin: 0;
     padding-top: 5%;
     padding-bottom: 3%;
@@ -76,15 +76,19 @@
     background-color: $light-grey;
     padding-top: 3%;
     padding-bottom: 3%;
+    .view-all {
+      display: none;
+    }
   }
   .contact-page {
     background-color: $dark-grey;
+    padding-top: 5%;
+    padding-bottom: 3%;
     .information {
       font-size: smaller;
       line-height: 5px;
     }
-    input,
-    textarea {
+    input, textarea {
       font-weight: bolder;
       color: white;
       background-color: transparent;
@@ -94,12 +98,21 @@
   }
   .footer {
     background-color: $light-grey;
-    .container .row .col-md-6 ul li {
-      display: inline;
+    .copyright {
+      text-align: center;
+      height: 5vh;
+      p {
+        margin-left: 5%;
+      }
     }
-    p {
-      font-size: 10px;
-      margin-bottom: 0;
+    .row {
+      width: 100%;
+      .social {
+        ul {
+          list-style-type: none;
+          display: inline-flex;
+        }
+      }
     }
   }
 }
@@ -120,7 +133,7 @@
     opacity: 0.1;
   }
   .swiper-slide:hover .products-button {
-    transition: ease 0.4s;
+    transition: ease .4s;
     opacity: 1;
   }
 }
@@ -163,15 +176,73 @@
   border-bottom: 5px solid $brand-color;
   margin: 0;
   p {
-    font-size: x-small;
+    font-size: small;
   }
   h5 {
     font-size: smaller;
+    font-weight: bolder;
   }
   h2 {
     text-align: left;
   }
   .card-body {
     background-color: $grey;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .home {
+    .top-page {
+      .row {
+        .razer-nari {
+          display: none;
+        }
+      }
+    }
+    .second-page {
+      .flex-container {
+        display: flex;
+        margin-left: 6%;
+        margin-right: 6%;
+        flex-direction: column;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        .flex-item {
+          width: 100%;
+        }
+      } 
+    }
+    .fourth-page {
+      .view-all {
+        display: block;
+        text-align: center;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    .footer {
+      .copyright {
+        text-align: left;
+        height: 10vh;
+      }
+      .navbar {
+        height: 27vh;
+        .row {
+          .social {
+            text-align: left;
+            margin-top: 1%;
+            margin-left: -53px;
+          }
+        }
+      }
+    }
+  }
+  .card {
+    margin-top: 10%;
+    margin-bottom: 2%;
+    p {
+      font-size: small;
+    }
   }
 }

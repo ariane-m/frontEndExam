@@ -7,8 +7,7 @@
 /**
  * Basic styles for links
  */
-a,
-i {
+a {
   color: $text-color;
   text-decoration: none;
 
@@ -51,127 +50,163 @@ input[type="text"] {
   background-color: $light-grey;
   font-size: small;
   height: 85px;
-
-  .navbar-nav .dropdown-menu {
-    background-color: $light-grey;
+  
+  .dropdown-menu {
+    width: 30%;
     .dropdown-item {
       font-size: smaller;
       color: $mid-grey;
       line-height: 20px;
-    }
-    .dropdown-menu-right {
-      left: 100%;
-      top: 63%;
+      margin-top: 3%;
     }
     .dropdown-item:hover {
       color: $brand-color;
       background-color: transparent;
     }
-    .collapse .navbar-collapse {
-      background-color: $light-grey;
-      .mobile-nav {
-        display: none;
-      }
+    .dropdown-submenu {
+      position: relative;
+      left: 194px;
+      top: -84px;
+    }
+    
+    .dropdown-submenu a::after {
+      transform: rotate(-90deg);
+      position: absolute;
+      right: 6px;
+      top: .8em;
+    }
+  }
+  .collapse .navbar-collapse {
+    background-color: $light-grey;
+    .mobile-nav {
+      display: none;
+    }
+  }
+}
+
+#navbarSupportedContent {
+  line-height: 10px;
+  ul li {
+    list-style: none;
+    line-height: 4;
+    i {
+      float: right;
+      margin-top: 10%;
+    }
+  }
+  
+}
+
+#products, #audio {
+  display: none;
+  font-size: smaller;
+  ul li {
+    list-style: none;
+    line-height: 4;
+    li:hover {
+      color: $brand-color;
+    }
+    a {
+      font-size: large;
+      color: $mid-grey;
+    }
+    i {
+      float: right;
+      margin-top: 10%;
+    }
+  }
+}
+
+
+//styles for navbar-toggler
+.navbar-toggler {
+  padding: 10px 0;
+
+  border: 0;
+  border-radius: 0;
+
+  .icon-bar {
+    display: block;
+    height: 4px;
+    width: 29px;
+
+    background: #000;
+
+    @include transition(0.5s cubic-bezier(0.65, 0.05, 0.36, 1));
+
+    @include boxshadow(none);
+
+    &+.icon-bar {
+      margin-top: 4px;
     }
   }
 
-  //styles for navbar-toggler
-  .navbar-toggler {
-    padding: 10px 0;
-
-    border: 0;
-    border-radius: 0;
-
+  &[aria-expanded="true"] {
     .icon-bar {
-      display: block;
-      height: 4px;
-      width: 29px;
-
-      background: #000;
-
-      @include transition(0.5s cubic-bezier(0.65, 0.05, 0.36, 1));
-
-      @include boxshadow(none);
-
-      & + .icon-bar {
-        margin-top: 4px;
+      &:first-child {
+        @include transform(rotate(225deg) translate(-6px, -5px));
       }
-    }
 
-    &[aria-expanded="true"] {
-      .icon-bar {
-        &:first-child {
-          @include transform(rotate(225deg) translate(-6px, -5px));
-        }
-
-        &:nth-child(2) {
-          opacity: 0;
-        }
-
-        &:last-child {
-          @include transform(rotate(-225deg) translate(-6px, 6px));
-        }
+      &:nth-child(2) {
+        opacity: 0;
       }
-    }
 
-    @include on-event() {
-      outline: 0;
+      &:last-child {
+        @include transform(rotate(-225deg) translate(-6px, 6px));
+      }
     }
   }
 
+  @include on-event() {
+    outline: 0;
+  }
+}
+
+p {
+  font-size: 14px;
+}
+
+@include media-breakpoint-up(sm) {
+  .container {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  p {
+    font-size: 12px;
+  }
+}
+
+@include media-breakpoint-up(md) {
   p {
     font-size: 14px;
   }
+}
 
-  @include media-breakpoint-up(xs) {
-    p {
-      font-size: 12px;
-    }
-  }
-
-  @include media-breakpoint-up(sm) {
-    p {
-      font-size: 12px;
-    }
-  }
-
-  @include media-breakpoint-up(md) {
-    p {
-      font-size: 14px;
-    }
-  }
-
-  @include media-breakpoint-up(lg) {
-    p {
-      font-size: 16px;
-    }
-  }
-  @media only screen and (max-width: 375px) {
-    .collapse .navbar-collapse {
-      background-color: $mid-grey;
-      display: flex;
-      flex-direction: column;
-    }
-    .second-page .flex-container {
-      flex-direction: column;
-    }
-    .third-page .container .row .col-sm-1 img {
-      display: none;
-      background-position: center;
-      padding-bottom: 0;
-    }
-  }
-
-  @media (min-width: 768px) {
-    .navbar-expand-md .navbar-nav .dropdown-menu {
-      background-color: black;
-      margin-top: 23%;
-      width: fit-content;
-    }
+@include media-breakpoint-up(lg) {
+  p {
+    font-size: 16px;
   }
 }
 @media only screen and (max-width: 375px) {
-  .home .second-page .flex-container .flex-item {
-    flex-basis: 100%;
+  .collapse .navbar-collapse {
+    background-color: $mid-grey;
+    display: flex;
+    flex-direction: column;
+  }
+  .third-page .container .row .col-sm-1 img{
+    display: none;
+    background-position: center;
+    padding-bottom: 0;
+  }
+  .home .third-page {
+    height: 10vh;
   }
 }
+
+@media (min-width: 768px){
+  .navbar-expand-md .navbar-nav .dropdown-menu {
+    
+    background-color: black;
+    margin-top: 23%;
+    width: fit-content;
+}}

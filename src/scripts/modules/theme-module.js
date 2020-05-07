@@ -46,10 +46,38 @@ AppName.Modules.ThemeModule = (function() {
 
 function toggle() {
   var mainContent = document.getElementById("main-content");
-  if (mainContent.style.display === "none") {
+  var navbar = document.getElementById("navbarSupportedContent");
+  var products = document.getElementById("products");
+  var audio = document.getElementById("audio");
+  if (mainContent.style.display === "none") 
+  {
     mainContent.style.display = "block";
-  } else {
+    products.style.display = "none";
+    audio.style.display = "none";
+  } 
+  else 
+  {
     mainContent.style.display = "none";
+    navbar.style.display = "block";
     document.body.style.backgroundColor = "#0F0F0F";
   }
+}
+
+function toggleProducts() {
+  var navbar = document.getElementById("navbarSupportedContent");
+  var products = document.getElementById("products");
+  navbar.style.display = "none";
+  products.style.display = "block";
+  document.body.style.backgroundColor = "#0F0F0F";
+  
+}
+
+function toggleAudio() {
+  var navbar = document.getElementById("navbarSupportedContent");
+  var products = document.getElementById("products");
+  var audio = document.getElementById("audio");
+  navbar.style.display = "none";
+  products.style.display = "none";
+  audio.style.display = "block";
+  document.body.style.backgroundColor = "#0F0F0F";
 }
